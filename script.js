@@ -33,6 +33,23 @@ function numerosMinMax(a, b, c) {
   //   console.log("Valor máximo: " + valor1);
 }
 
-numerosMaxMin(4, 2, 4);
-// console.log("========================");
-numerosMinMax(4, 2, 4);
+// numerosMaxMin(4, 2, 4);
+// numerosMinMax(4, 2, 4);
+
+let valorA = Number(prompt("Ingresa un número: ", "100"));
+let valorB = Number(prompt("Ingresa un número: ", "200"));
+let valorC = Number(prompt("Ingresa un número: ", "180"));
+
+if ((valorA && valorB && valorC) != null) {
+  //Entrada por prompt
+  document.getElementById("entrada").innerHTML =
+    "Los números ingresados fueron: " + valorA + ", " + valorB + ", " + valorC;
+  numerosMaxMin(valorA, valorB, valorC);
+  //Ascendentes
+  document.getElementById("salida1").innerHTML =
+    "Salida: " + valor1 + ", " + valor3 + ", " + valor2;
+
+  numerosMinMax(valorA, valorB, valorC);
+  document.getElementById("salida2").innerHTML =
+    "Salida: " + valor2 + ", " + valor3 + ", " + valor1;
+}
