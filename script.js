@@ -18,23 +18,12 @@ function numeros(a, b, c) {
 function numerosMaxMin(a, b, c) {
   numeros(a, b, c);
   console.log(valor1, valor3, valor2);
-  //   console.log("De mayor a menor:");
-  //   console.log("Valor máximo: " + valor1);
-  //   console.log("Valor medio: " + valor3);
-  //   console.log("Valor mínimo: " + valor2);
 }
 
 function numerosMinMax(a, b, c) {
   numeros(a, b, c);
   console.log(valor2, valor3, valor1);
-  //   console.log("De mayor a menor:");
-  //   console.log("Valor mínimo: " + valor2);
-  //   console.log("Valor medio: " + valor3);
-  //   console.log("Valor máximo: " + valor1);
 }
-
-// numerosMaxMin(4, 2, 4);
-// numerosMinMax(4, 2, 4);
 
 let valorA = Number(prompt("Ingresa un número: ", "100"));
 let valorB = Number(prompt("Ingresa un número: ", "200"));
@@ -45,11 +34,12 @@ if ((valorA && valorB && valorC) != null) {
   document.getElementById("entrada").innerHTML =
     "Los números ingresados fueron: " + valorA + ", " + valorB + ", " + valorC;
   numerosMaxMin(valorA, valorB, valorC);
-  //Ascendentes
+  //Descendentes
   document.getElementById("salida1").innerHTML =
     "Salida: " + valor1 + ", " + valor3 + ", " + valor2;
 
   numerosMinMax(valorA, valorB, valorC);
+  //Ascendentes
   document.getElementById("salida2").innerHTML =
     "Salida: " + valor2 + ", " + valor3 + ", " + valor1;
 }
